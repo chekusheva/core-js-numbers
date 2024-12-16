@@ -19,8 +19,15 @@
  *   5, 5  => 25
  */
 function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
-}
+  return width * height }
+const width = 4;
+const height = 10;
+const area = getRectangleArea(width,height);
+console.log(area);
+
+
+
+
 
 /**
  * Returns a circumference of circle given by radius.
@@ -33,9 +40,9 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
-}
+  function getCircleCircumferenc( /* radius */)  {
+    throw new Error('Not implemented');
+  }
 
 /**
  * Returns an average of two given numbers.
@@ -122,9 +129,12 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     5     => 5
  *     0     => 0
  */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+function getLastDigit(number) {
+  const lastDigit = Math.abs(number)%10;
+  return lastDigit;
+
 }
+console.log(getLastDigit(456));
 
 /**
  * Returns a number by given string representation.
@@ -604,7 +614,7 @@ function getCountOfOddNumbers(/* number */) {
 
 module.exports = {
   getRectangleArea,
-  getCircleCircumference,
+  getCircleCircumferenc,
   getAverage,
   getDistanceBetweenPoints,
   getLinearEquationRoot,
