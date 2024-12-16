@@ -18,19 +18,13 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-
-  return width * height
-}
 const width = 4;
 const height = 10;
-const area = getRectangleArea(width,height);
-console.log(area);
-
-
-
-
-
+function getRectangleArea(/* width, height */) {
+  return width * height;
+}
+const area = getRectangleArea(width, height);
+getRectangleArea(area);
 /**
  * Returns a circumference of circle given by radius.
  *
@@ -42,9 +36,9 @@ console.log(area);
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-  function getCircleCircumferenc( /* radius */)  {
-    throw new Error('Not implemented');
-  }
+function getCircleCircumference(/* radius */) {
+  throw new Error('Not implemented');
+}
 
 /**
  * Returns an average of two given numbers.
@@ -132,11 +126,10 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     0     => 0
  */
 function getLastDigit(number) {
-  const lastDigit = Math.abs(number)%10;
+  const lastDigit = Math.abs(number) % 10;
   return lastDigit;
-
 }
-console.log(getLastDigit(456));
+getLastDigit(456);
 
 /**
  * Returns a number by given string representation.
@@ -243,9 +236,9 @@ function toNumber(/* value, def */) {
  *   0  => 0
  */
 function getCube(number) {
-return number ** 3;
+  return number ** 3;
 }
-console.log(getCube(4))
+getCube(4);
 
 /**
  * Returns the Fibonacci number located at the index position.
@@ -617,7 +610,7 @@ function getCountOfOddNumbers(/* number */) {
 
 module.exports = {
   getRectangleArea,
-  getCircleCircumferenc,
+  getCircleCircumference,
   getAverage,
   getDistanceBetweenPoints,
   getLinearEquationRoot,
