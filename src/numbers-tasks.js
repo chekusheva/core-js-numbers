@@ -19,7 +19,9 @@
  *   5, 5  => 25
  */
 function getRectangleArea(/* width, height */) {
-  return width * height }
+
+  return width * height
+}
 const width = 4;
 const height = 10;
 const area = getRectangleArea(width,height);
@@ -240,9 +242,10 @@ function toNumber(/* value, def */) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+function getCube(number) {
+return number ** 3;
 }
+console.log(getCube(4))
 
 /**
  * Returns the Fibonacci number located at the index position.
